@@ -70,6 +70,10 @@ body{
 
 }
 
+.image-box:not(:hover) .content-box{
+    animation: data-down 1s forwards;
+}
+
 .image-box:hover{
 
     animation: outside 1s forwards;
@@ -95,3 +99,4 @@ body{
         overflow: initial;
     }
 }
+

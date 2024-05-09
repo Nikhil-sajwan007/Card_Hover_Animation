@@ -18,7 +18,7 @@ body{
 
 .main-container{
 
-    border: 8px solid white;
+    border: 1px solid white;
     width: 40%;
     max-width: 500px;
     border-radius: 20px;
@@ -43,7 +43,7 @@ body{
     background-color: white;
     position: absolute;
     bottom: 0;
-    margin-bottom: -12rem;
+    margin-bottom: -14rem;
     width: 90%;
     align-self: center;
     padding: 30px 30px;
@@ -52,7 +52,10 @@ body{
     border-radius: 12px;
     transition: 600ms all ease-in-out;
     
+    
 }
+
+
 
 .content-box a{
     display: block;
@@ -62,6 +65,33 @@ body{
 
 .image-box:hover .content-box{
 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    animation: data-up 1s forwards;
 
+}
+
+.image-box:hover{
+
+    animation: outside 1s forwards;
+}
+
+
+@keyframes data-up{
+
+    50%{
+
+        transform: translateY(-18rem);
+    }
+
+    100%{
+
+        transform: translateY(-12rem);
+    }
+}
+
+@keyframes outside{
+
+    to{
+        overflow: initial;
+    }
 }

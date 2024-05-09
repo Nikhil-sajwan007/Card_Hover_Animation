@@ -96,7 +96,7 @@ body{
 @keyframes outside{
 
     to{
-        overflow: initial;
+        overflow: visible;
     }
 }
 
